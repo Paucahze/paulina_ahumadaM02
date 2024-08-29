@@ -1,0 +1,24 @@
+body{
+    background-color:rgb(195, 231, 14) ;
+    
+}
+.contenedor {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.imagen-contenedor {
+    position: relative;
+}
+
+.imagen-contenedor img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.imagen-oculta {
+    display: none;
+}
