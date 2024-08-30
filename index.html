@@ -14,20 +14,26 @@
 
 </head>
 
+
+
 <body>
- 
-    <div class="artista" id="artista">
-        <div class="imagen-firma">
-            <img src="assets/img/SwamiAgria/tarjetaA.jpg" alt="Imagen A" class="imagenVisibleA" id="imagen">
+
+    <div id="inicio" style="text-align: center;">
+        <div id="imagen-firma-uno" class="imagen-firma-uno">
+            <img src="assets/img/SwamiAgria/tarjetaA.jpg" alt="Imagen A" class="imagenMostrar" onclick="mostrarOcultarImagenes()">
+        </div>
+    
+        <div id="imagen-firma-dos" style="display: none; text-align: center;">
+            <img src="assets/img/SwamiAgria/tarjetaB.jpg" alt="Imagen" style="width: 40%;" onclick="mostrarOcultarImagenes()">
+            <p>Este es el texto que aparecerá debajo de la imagen.</p>
         </div>
     </div>
-
-
+    
 
     <nav>
-        <ul class="nav" >
+        <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link" href="artista.html">ARTISTA</a>
+                <a class="nav-link" href="#">ARTISTA</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#proyectos">PROYECTOS</a>
@@ -61,9 +67,8 @@
             <div class="card text-white">
                 <img src="assets/img/card/card01.jpg" class="card-img" alt="...">
                 <div class="card-img-overlay">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title">Figuras</h5>
+                    <p class="card-text">Creación de distintas esculturas, para aplicaión en ArtToy.</p>
                     <p class="card-text">Last updated 3 mins ago</p>
                 </div>
             </div>
@@ -92,7 +97,7 @@
         </div>
     </section>
 
-    <div id = "contacto" >
+    <div id="contacto">
 
     </div>
 
@@ -112,4 +117,5 @@
     <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
     <script src="https://cdn.canvasjs.com/jquery.canvasjs.min.js"></script>
 </body>
+
 </html>

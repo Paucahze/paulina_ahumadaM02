@@ -1,3 +1,36 @@
+/*--Inicio imagen firma--*/
+
+#imagen-firma-uno{
+    background-color: black;
+}
+
+#imagen-firma-dos{
+    background-color: black;
+    color: white;
+}
+
+/*----*/
+
+@font-face {
+    font-family: 'moon_get-Heavy';
+    src: url('fonts/moon_get-Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.nav-link {
+    font-family: 'moon_get-Heavy', sans-serif;
+    color: rgb(93, 95, 91);
+    font-size: 2rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*---*/
+
 .contenedor {
     display: flex;
     justify-content: center;
@@ -18,49 +51,7 @@
     display: none;
 }
 
-
 /*-------*/
-
-@font-face {
-    font-family: 'moon_get-Heavy';
-    src: url('fonts/moon_get-Heavy.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.nav-link {
-    font-family: 'moon_get-Heavy', sans-serif;
-    color: rgb(93, 95, 91);
-    font-size: 2rem;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-evenly;
-
-}
-
-/*artista html*/
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Estilos para #artista */
-#artista {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: yellow;
-    height: 100vh;
-    flex-direction: column;
-}
-
-.imagen-firma img {
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
 
 /* Estilos para #contacto */
 #contacto {
