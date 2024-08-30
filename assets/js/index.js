@@ -13,3 +13,12 @@ document.querySelectorAll('.imagen-contenedor').forEach(contenedor => {
         imagenOculta.style.display = 'none';
     });
 });
+
+//_______
+
+
+document.getElementById("imagen").addEventListener("dblclick", function () {
+    this.src = "assets/img/SwamiAgria/tarjeta_pequeña.jpg";
+    this.style.width = "200px";
+    document.getElementById("mensaje").style.display = "block";
+});
