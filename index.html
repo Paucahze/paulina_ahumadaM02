@@ -18,22 +18,25 @@
 
 <body>
 
+    <!-- Inicio imagen firma-->
     <div id="inicio" style="text-align: center;">
         <div id="imagen-firma-uno" class="imagen-firma-uno">
-            <img src="assets/img/SwamiAgria/tarjetaA.jpg" alt="Imagen A" class="imagenMostrar" onclick="mostrarOcultarImagenes()">
+            <img src="assets/img/SwamiAgria/tarjetaA.jpg" alt="Imagen A" class="imagenMostrar"
+                onclick="mostrarOcultarImagenes()">
         </div>
-    
+
         <div id="imagen-firma-dos" style="display: none; text-align: center;">
-            <img src="assets/img/SwamiAgria/tarjetaB.jpg" alt="Imagen" style="width: 40%;" onclick="mostrarOcultarImagenes()">
+            <img src="assets/img/SwamiAgria/tarjetaB.jpg" alt="Imagen" style="width: 40%;"
+                onclick="mostrarOcultarImagenes()">
             <p>Este es el texto que aparecerá debajo de la imagen.</p>
         </div>
     </div>
-    
 
+    <!-- NAV artista, proyecto, contacto -->
     <nav>
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">ARTISTA</a>
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">ARTISTA</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#proyectos">PROYECTOS</a>
@@ -44,23 +47,51 @@
         </ul>
     </nav>
 
+    <!-- Lista de  de habilidades destacadas -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Habilidades destacadas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vale, gracias.</button>
+                    <a href="#contacto" class="btn btn-primary" data-bs-dismiss="modal">Contactar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- flashes -->
 
     <figure class="galeria-de-imagenes">
         <div class="contenedor col-8 mx-auto">
             <div class="imagen-contenedor">
-                <img src="assets/img/Flashes/stickers1.jpg" alt="Imagen 1" class="imagenVisible">
+                <img src="assets/img/Flashes/stickers1.jpg" alt="Imagen 1" class="imagenVisible" onmouseover="mostrarOcultarImagen(this)" onmouseout="restaurarImagen(this)">
                 <img src="assets/img/Flashes/stickers4.jpg" alt="Imagen 4" class="imagenOculta">
             </div>
             <div class="imagen-contenedor">
-                <img src="assets/img/Flashes/stickers2.jpg" alt="Imagen 2" class="imagenVisible">
+                <img src="assets/img/Flashes/stickers2.jpg" alt="Imagen 2" class="imagenVisible" onmouseover="mostrarOcultarImagen(this)" onmouseout="restaurarImagen(this)">
                 <img src="assets/img/Flashes/stickers5.jpg" alt="Imagen 5" class="imagenOculta">
             </div>
             <div class="imagen-contenedor">
-                <img src="assets/img/Flashes/stickers3.jpg" alt="Imagen 3" class="imagenVisible">
+                <img src="assets/img/Flashes/stickers3.jpg" alt="Imagen 3" class="imagenVisible" onmouseover="mostrarOcultarImagen(this)" onmouseout="restaurarImagen(this)">
                 <img src="assets/img/Flashes/stickers6.jpg" alt="Imagen 6" class="imagenOculta">
             </div>
         </div>
     </figure>
+
+
+
+
+    <!-- Proyectos -->
 
     <section id="proyectos">
         <div>
@@ -96,6 +127,9 @@
             </div>
         </div>
     </section>
+
+
+
 
     <div id="contacto">
 
