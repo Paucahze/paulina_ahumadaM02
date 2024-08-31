@@ -28,7 +28,7 @@
         <div id="imagen-firma-dos" style="display: none; text-align: center;">
             <img src="assets/img/SwamiAgria/tarjetaB.jpg" alt="Imagen" style="width: 40%;"
                 onclick="mostrarOcultarImagenes()">
-            <p>Este es el texto que aparecerá debajo de la imagen.</p>
+            <p class="pinicial">Swami Agria es una artista visual y escultora del norte de Chile cuyo trabajo se centra principalmente en el ámbito de la creación de personajes. Sus personajes suelen ser seres de estilo caricaturesco atormentados por sentimientos o emociones de la vida real expresados ​​de una manera muy estilizada. La técnica de Swami está influenciada por el uso de diferentes medios y materiales que realzan el ámbito visual frenético, casi psicodélico, en el que viven sus personajes.</p>
         </div>
     </div>
 
@@ -61,7 +61,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vale, gracias.</button>
-                    <a href="#contacto" class="btn btn-primary" data-bs-dismiss="modal">Contactar</a>
+                    <a href="#contacto" class="btn btn-primary">Contactar</a>
                 </div>
             </div>
         </div>
@@ -74,15 +74,18 @@
     <figure class="galeria-de-imagenes">
         <div class="contenedor col-8 mx-auto">
             <div class="imagen-contenedor">
-                <img src="assets/img/Flashes/stickers1.jpg" alt="Imagen 1" class="imagenVisible" onmouseover="mostrarOcultarImagen(this)" onmouseout="restaurarImagen(this)">
+                <img src="assets/img/Flashes/stickers1.jpg" alt="Imagen 1" class="imagenVisible"
+                    onmouseover="mostrarOcultarImagen(this)" onmouseout="restaurarImagen(this)">
                 <img src="assets/img/Flashes/stickers4.jpg" alt="Imagen 4" class="imagenOculta">
             </div>
             <div class="imagen-contenedor">
-                <img src="assets/img/Flashes/stickers2.jpg" alt="Imagen 2" class="imagenVisible" onmouseover="mostrarOcultarImagen(this)" onmouseout="restaurarImagen(this)">
+                <img src="assets/img/Flashes/stickers2.jpg" alt="Imagen 2" class="imagenVisible"
+                    onmouseover="mostrarOcultarImagen(this)" onmouseout="restaurarImagen(this)">
                 <img src="assets/img/Flashes/stickers5.jpg" alt="Imagen 5" class="imagenOculta">
             </div>
             <div class="imagen-contenedor">
-                <img src="assets/img/Flashes/stickers3.jpg" alt="Imagen 3" class="imagenVisible" onmouseover="mostrarOcultarImagen(this)" onmouseout="restaurarImagen(this)">
+                <img src="assets/img/Flashes/stickers3.jpg" alt="Imagen 3" class="imagenVisible"
+                    onmouseover="mostrarOcultarImagen(this)" onmouseout="restaurarImagen(this)">
                 <img src="assets/img/Flashes/stickers6.jpg" alt="Imagen 6" class="imagenOculta">
             </div>
         </div>
@@ -98,20 +101,19 @@
             <div class="card text-white">
                 <img src="assets/img/card/card01.jpg" class="card-img" alt="...">
                 <div class="card-img-overlay">
-                    <h5 class="card-title">Figuras</h5>
-                    <p class="card-text">Creación de distintas esculturas, para aplicaión en ArtToy.</p>
-                    <p class="card-text">Last updated 3 mins ago</p>
+                    <h3 class="card-title">Figuras</h3>
+                    <p class="card-text">Creación de distintas esculturas basadas en el artToy.</p>
+                    <p class="card-text"><em>Técnica mixta</em></p>
                 </div>
             </div>
         </div>
         <div>
             <div class="card text-white">
                 <img src="assets/img/card/card03.jpg" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <p class="card-text">Last updated 3 mins ago</p>
+                <div class="card-img-overlay" id="card2">
+                    <h3 class="card-title fondotxt">Cortos de animación</h3>
+                    <p class="card-text fondotxt" >Creación de distintos cortos animados y live-action junto al estudio de CHIBILZ.</p>
+                    <p class="card-text fondotxt"><em>Técnica mixta</em></p>
                 </div>
             </div>
         </div>
@@ -119,19 +121,64 @@
             <div class="card text-white">
                 <img src="assets/img/card/card02.jpg" class="card-img" alt="...">
                 <div class="card-img-overlay">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <p class="card-text">Last updated 3 mins ago</p>
+                    <h3 class="card-title">Pinturas/dibujos</h3>
+                    <p class="card-text">Personajes plasmados en distintos medios.</p>
+                    <p class="card-text"><em>Técnica mixta</em></p>
                 </div>
             </div>
         </div>
     </section>
 
 
+    <!-- Formulario -->
 
 
-    <div id="contacto">
+    <div id="contacto" class="contacto">
+
+        <form id="form" class="row g-3 needs-validation" novalidate>
+            <div id="imagen-firma-tres" class="imagen-firma-tres">
+                <img src="assets/img/SwamiAgria/tarjetaA.jpg" alt="Imagen C" class="imagenFinal" style="width: 30%">
+            </div>
+            <p class="pform">Escribe tus datos y pronto me contactare contigo.</p>
+            <div class="col-md-4 position-relative">
+                <label for="validationTooltip01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationTooltip01" value="Tu Nombre" required>
+                <div class="valid-tooltip">
+                    Gracias!
+                </div>
+            </div>
+            <div class="col-md-4 position-relative">
+                <label for="validationTooltip02" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="validationTooltip02" value="Tu Apellido" required>
+                <div class="valid-tooltip">
+                    Gracias!
+                </div>
+            </div>
+            <div class="col-md-3 position-relative">
+                <label for="validationTooltip04" class="form-label">Razón</label>
+                <select class="form-select" id="validationTooltip04" required>
+                    <option selected disabled value="">Elige...</option>
+                    <option>Tomar un cafe</option>
+                    <option>Conversar </option>
+                    <option>Colaborativo </option>
+                    <option>Freelance</option>
+                </select>
+                <div class="invalid-tooltip">
+                    Escoge una opción, porfa.
+                </div>
+            </div>
+            <div class="col-mb-3 position-relative">
+                <label for="exampleFormControlInput1" class="form-label">Mail</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+            </div>
+            <div class="col-mb-3 position-relative">
+                <label for="exampleFormControlTextarea1" class="form-label">Escribe tus razones</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="col">
+                <button id = "btn-sumit" class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+        </form>
 
     </div>
 
