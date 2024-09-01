@@ -13,15 +13,17 @@ function mostrarOcultarImagenes() {
     }
 }
 
+//flashes
 
-//Flashes 
 function mostrarOcultarImagen(element) {
-    element.style.display = 'none';
-    element.nextElementSibling.style.display = 'block';
+    const contenedor = element.closest('.imagen-contenedor');
+    contenedor.querySelector('.imagenVisible').style.display = 'none';
+    contenedor.querySelector('.imagenOculta').style.display = 'block';
 }
 
 function restaurarImagen(element) {
-    element.style.display = 'block';
-    element.nextElementSibling.style.display = 'none';
+    const contenedor = element.closest('.imagen-contenedor');
+    contenedor.querySelector('.imagenVisible').style.display = 'block';
+    contenedor.querySelector('.imagenOculta').style.display = 'none';
 }
 

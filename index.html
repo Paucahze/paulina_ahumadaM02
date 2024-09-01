@@ -11,10 +11,7 @@
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 </head>
-
-
 
 <body>
 
@@ -24,11 +21,10 @@
             <img src="assets/img/SwamiAgria/tarjetaA.jpg" alt="Imagen A" class="imagenMostrar"
                 onclick="mostrarOcultarImagenes()">
         </div>
-
         <div id="imagen-firma-dos" style="display: none; text-align: center;">
             <img src="assets/img/SwamiAgria/tarjetaB.jpg" alt="Imagen" style="width: 40%;"
                 onclick="mostrarOcultarImagenes()">
-            <p class="pinicial">Swami Agria es una artista visual y escultora del norte de Chile cuyo trabajo se centra principalmente en el ámbito de la creación de personajes. Sus personajes suelen ser seres de estilo caricaturesco atormentados por sentimientos o emociones de la vida real expresados ​​de una manera muy estilizada. La técnica de Swami está influenciada por el uso de diferentes medios y materiales que realzan el ámbito visual frenético, casi psicodélico, en el que viven sus personajes.</p>
+            <p class="pinicial col-8 mx-auto" id="pinicial">Swami Agria es una artista visual y escultora del norte de Chile cuyo trabajo se centra principalmente en el ámbito de la creación de personajes.Sus personajes suelen ser seres de estilo caricaturesco atormentados por sentimientos o emociones de la vida real expresados ​​de una manera muy estilizada. La técnica de Swami está influenciada por el uso de diferentes medios y materiales que realzan el ámbito visual frenético, casi psicodélico, en el que viven sus personajes.</p>
         </div>
     </div>
 
@@ -47,7 +43,7 @@
         </ul>
     </nav>
 
-    <!-- Lista de  de habilidades destacadas -->
+    <!-- Lista de habilidades destacadas Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -57,20 +53,22 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <ol type=”A”>
+                        <li>Diseñadora Industrial</li>
+                        <li>Creadora de Personajes</li>
+                        <li>Escultora</li>
+                        <li>Artista multimedia</li>
+                      </ol>
+                      <p>Presiona la imagen inicial para saber quién es Swami_Agria</p> 
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vale, gracias.</button>
-                    <a href="#contacto" class="btn btn-primary">Contactar</a>
                 </div>
             </div>
         </div>
     </div>
 
-
-
     <!-- flashes -->
-
     <figure class="galeria-de-imagenes">
         <div class="contenedor col-8 mx-auto">
             <div class="imagen-contenedor">
@@ -91,11 +89,7 @@
         </div>
     </figure>
 
-
-
-
     <!-- Proyectos -->
-
     <section id="proyectos">
         <div>
             <div class="card text-white">
@@ -112,7 +106,8 @@
                 <img src="assets/img/card/card03.jpg" class="card-img" alt="...">
                 <div class="card-img-overlay" id="card2">
                     <h3 class="card-title fondotxt">Cortos de animación</h3>
-                    <p class="card-text fondotxt" >Creación de distintos cortos animados y live-action junto al estudio de CHIBILZ.</p>
+                    <p class="card-text fondotxt">Creación de distintos cortos animados y live-action junto al estudio
+                        de CHIBILZ.</p>
                     <p class="card-text fondotxt"><em>Técnica mixta</em></p>
                 </div>
             </div>
@@ -129,10 +124,7 @@
         </div>
     </section>
 
-
-    <!-- Formulario -->
-
-
+    <!-- Formulario para contacto -->
     <div id="contacto" class="contacto">
 
         <form id="form" class="row g-3 needs-validation" novalidate>
@@ -142,14 +134,14 @@
             <p class="pform">Escribe tus datos y pronto me contactare contigo.</p>
             <div class="col-md-4 position-relative">
                 <label for="validationTooltip01" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="validationTooltip01" value="Tu Nombre" required>
+                <input type="text" class="form-control" id="validationTooltip01" placeholder="Tu Nombre" required>
                 <div class="valid-tooltip">
                     Gracias!
                 </div>
             </div>
             <div class="col-md-4 position-relative">
                 <label for="validationTooltip02" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="validationTooltip02" value="Tu Apellido" required>
+                <input type="text" class="form-control" id="validationTooltip02" placeholder="Tu Apellido" required>
                 <div class="valid-tooltip">
                     Gracias!
                 </div>
@@ -169,17 +161,17 @@
             </div>
             <div class="col-mb-3 position-relative">
                 <label for="exampleFormControlInput1" class="form-label">Mail</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"
+                    required>
             </div>
             <div class="col-mb-3 position-relative">
                 <label for="exampleFormControlTextarea1" class="form-label">Escribe tus razones</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <div class="col">
-                <button id = "btn-sumit" class="btn btn-primary" type="submit">Enviar</button>
+                <button id="btn-sumit" class="btn btn-primary" type="submit">Enviar</button>
             </div>
         </form>
-
     </div>
 
 
